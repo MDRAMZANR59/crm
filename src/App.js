@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+
   return (
     <div className="app-wrapper"> {/*begin::Header*/}
         <nav className="app-header navbar navbar-expand bg-body"> {/*begin::Container*/}
@@ -95,7 +97,7 @@ function App() {
             </div> {/*end::Container*/}
         </nav> {/*end::Header*/} {/*begin::Sidebar*/}
         <aside className="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> {/*begin::Sidebar Brand*/}
-            <div className="sidebar-brand"> {/*begin::Brand Link*/} <a href="./index.html" className="brand-link"> {/*begin::Brand Image*/} <img src=".assets/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image opacity-75 shadow"/> {/*end::Brand Image*/} {/*begin::Brand Text*/} <span className="brand-text fw-light">AdminLTE 4</span> {/*end::Brand Text*/} </a> {/*end::Brand Link*/} </div> {/*end::Sidebar Brand*/} {/*begin::Sidebar Wrapper*/}
+            <div className="sidebar-brand"> {/*begin::Brand Link*/} <a href="./index.html" className="brand-link"> {/*begin::Brand Image*/} <img src="/assets/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image opacity-75 shadow"/> {/*end::Brand Image*/} {/*begin::Brand Text*/} <span className="brand-text fw-light">AdminLTE 4</span> {/*end::Brand Text*/} </a> {/*end::Brand Link*/} </div> {/*end::Sidebar Brand*/} {/*begin::Sidebar Wrapper*/}
             <div className="sidebar-wrapper">
                 <nav className="mt-2"> {/*begin::Sidebar Menu*/}
                     <ul className="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
