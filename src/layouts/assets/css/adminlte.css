@@ -13180,6 +13180,9 @@ textarea.form-control-lg {
   padding: 0;
   list-style: none;
 }
+.menu-open .nav-treeview {
+  display: block;
+}
 .nav-indent .sidebar-menu .nav-treeview {
   padding-left: 0.5rem;
 }

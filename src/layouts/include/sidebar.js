@@ -2,22 +2,22 @@ import React from 'react'
 import { Link,useLocation } from 'react-router-dom'
 function Sidebar() {
 
-	// const activeMenu=(e)=>{
-    //     document.querySelectorAll('.submenu').forEach(
-    //         function(e){
-    //             e.classList.remove('active');
-    //         }
-    //     )
-    //     const childElement = e.target.parentElement.querySelector('.submenu');
-    //     if(childElement && childElement.classList.contains('submenu')){
-    //         childElement.classList.add('active');
-    //     }
-    // }
+	const activeMenu=(e)=>{
+        document.querySelectorAll('.nav-treeview').forEach(
+            function(e){
+                e.classList.remove('menu-open');
+            }
+        )
+        const childElement = e.target.parentElement.querySelector('.nav-treeview');
+        if(childElement && childElement.classList.contains('nav-treeview')){
+            childElement.classList.add('menu-open');
+        }
+    }
 
-	// const location = useLocation();
-	// const isLinkActive = (path)=>{
-    //     return location.pathname == path ? 'active' : "";
-    // }
+	const location = useLocation();
+	const isLinkActive = (path)=>{
+        return location.pathname == path ? 'menu-open' : "";
+    }
   return (
     
     <aside className="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> {/*begin::Sidebar Brand*/}
@@ -25,28 +25,11 @@ function Sidebar() {
     <div className="sidebar-wrapper">
         <nav className="mt-2"> {/*begin::Sidebar Menu*/}
             <ul className="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
-                <li className="nav-item menu-open"> <a href="#" className="nav-link active"> <i className="nav-icon bi bi-speedometer"></i>
-                        <p>
-                            Dashboard
-                            <i className="nav-arrow bi bi-chevron-right"></i>
-                        </p>
-                    </a>
-                    <ul className="nav nav-treeview">
-                        <li className="nav-item"> <a href="./index.html" className="nav-link active"> <i className="nav-icon bi bi-circle"></i>
-                                <p>Dashboard v1</p>
-                            </a> </li>
-                        <li className="nav-item"> <a href="./index2.html" className="nav-link"> <i className="nav-icon bi bi-circle"></i>
-                                <p>Dashboard v2</p>
-                            </a> </li>
-                        <li className="nav-item"> <a href="./index3.html" className="nav-link"> <i className="nav-icon bi bi-circle"></i>
-                                <p>Dashboard v3</p>
-                            </a> </li>
-                    </ul>
-                </li>
-                <li className="nav-item"> <a href="./generate/theme.html" className="nav-link"> <i className="nav-icon bi bi-palette"></i>
-                        <p>Theme Generate</p>
+ 
+                <li  onClick={activeMenu} className="nav-item"> <a href="./generate/theme.html" className="nav-link"> <i className="nav-icon bi bi-palette"></i>
+                        <p>Dashboard</p>
                     </a> </li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-box-seam-fill"></i>
+                <li  onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-box-seam-fill"></i>
                         <p>
                             Widgets
                             <i className="nav-arrow bi bi-chevron-right"></i>
@@ -64,7 +47,7 @@ function Sidebar() {
                             </a> </li>
                     </ul>
                 </li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-clipboard-fill"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-clipboard-fill"></i>
                         <p>
                             Layout Options
                             <span className="nav-badge badge text-bg-secondary me-3">6</span> <i className="nav-arrow bi bi-chevron-right"></i>
@@ -94,7 +77,7 @@ function Sidebar() {
                             </a> </li>
                     </ul>
                 </li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-tree-fill"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-tree-fill"></i>
                         <p>
                             UI Elements
                             <i className="nav-arrow bi bi-chevron-right"></i>
@@ -112,7 +95,7 @@ function Sidebar() {
                             </a> </li>
                     </ul>
                 </li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-pencil-square"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-pencil-square"></i>
                         <p>
                             Forms
                             <i className="nav-arrow bi bi-chevron-right"></i>
@@ -124,7 +107,7 @@ function Sidebar() {
                             </a> </li>
                     </ul>
                 </li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-table"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-table"></i>
                         <p>
                             Tables
                             <i className="nav-arrow bi bi-chevron-right"></i>
@@ -137,7 +120,7 @@ function Sidebar() {
                     </ul>
                 </li>
                 <li className="nav-header">EXAMPLES</li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-box-arrow-in-right"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-box-arrow-in-right"></i>
                         <p>
                             Auth
                             <i className="nav-arrow bi bi-chevron-right"></i>
@@ -179,17 +162,17 @@ function Sidebar() {
                             </a> </li>
                     </ul>
                 </li>
-                <li className="nav-header">DOCUMENTATIONS</li>
-                <li className="nav-item"> <a href="./docs/introduction.html" className="nav-link"> <i className="nav-icon bi bi-download"></i>
+                <li  className="nav-header">DOCUMENTATIONS</li>
+                <li onClick={activeMenu} className="nav-item"> <a href="./docs/introduction.html" className="nav-link"> <i className="nav-icon bi bi-download"></i>
                         <p>Installation</p>
                     </a> </li>
-                <li className="nav-item"> <a href="./docs/layout.html" className="nav-link"> <i className="nav-icon bi bi-grip-horizontal"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="./docs/layout.html" className="nav-link"> <i className="nav-icon bi bi-grip-horizontal"></i>
                         <p>Layout</p>
                     </a> </li>
-                <li className="nav-item"> <a href="./docs/color-mode.html" className="nav-link"> <i className="nav-icon bi bi-star-half"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="./docs/color-mode.html" className="nav-link"> <i className="nav-icon bi bi-star-half"></i>
                         <p>Color Mode</p>
                     </a> </li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-ui-checks-grid"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-ui-checks-grid"></i>
                         <p>
                             Components
                             <i className="nav-arrow bi bi-chevron-right"></i>
@@ -204,7 +187,7 @@ function Sidebar() {
                             </a> </li>
                     </ul>
                 </li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-filetype-js"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-filetype-js"></i>
                         <p>
                             Javascript
                             <i className="nav-arrow bi bi-chevron-right"></i>
@@ -216,23 +199,23 @@ function Sidebar() {
                             </a> </li>
                     </ul>
                 </li>
-                <li className="nav-item"> <a href="./docs/browser-support.html" className="nav-link"> <i className="nav-icon bi bi-browser-edge"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="./docs/browser-support.html" className="nav-link"> <i className="nav-icon bi bi-browser-edge"></i>
                         <p>Browser Support</p>
                     </a> </li>
-                <li className="nav-item"> <a href="./docs/how-to-contribute.html" className="nav-link"> <i className="nav-icon bi bi-hand-thumbs-up-fill"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="./docs/how-to-contribute.html" className="nav-link"> <i className="nav-icon bi bi-hand-thumbs-up-fill"></i>
                         <p>How To Contribute</p>
                     </a> </li>
-                <li className="nav-item"> <a href="./docs/faq.html" className="nav-link"> <i className="nav-icon bi bi-question-circle-fill"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="./docs/faq.html" className="nav-link"> <i className="nav-icon bi bi-question-circle-fill"></i>
                         <p>FAQ</p>
                     </a> </li>
-                <li className="nav-item"> <a href="./docs/license.html" className="nav-link"> <i className="nav-icon bi bi-patch-check-fill"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="./docs/license.html" className="nav-link"> <i className="nav-icon bi bi-patch-check-fill"></i>
                         <p>License</p>
                     </a> </li>
                 <li className="nav-header">MULTI LEVEL EXAMPLE</li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle-fill"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle-fill"></i>
                         <p>Level 1</p>
                     </a> </li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle-fill"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle-fill"></i>
                         <p>
                             Level 1
                             <i className="nav-arrow bi bi-chevron-right"></i>
@@ -265,17 +248,17 @@ function Sidebar() {
                             </a> </li>
                     </ul>
                 </li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle-fill"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle-fill"></i>
                         <p>Level 1</p>
                     </a> </li>
-                <li className="nav-header">LABELS</li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle text-danger"></i>
+                <li  className="nav-header">LABELS</li>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle text-danger"></i>
                         <p className="text">Important</p>
                     </a> </li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle text-warning"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle text-warning"></i>
                         <p>Warning</p>
                     </a> </li>
-                <li className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle text-info"></i>
+                <li onClick={activeMenu} className="nav-item"> <a href="#" className="nav-link"> <i className="nav-icon bi bi-circle text-info"></i>
                         <p>Informational</p>
                     </a> </li>
             </ul> {/*end::Sidebar Menu*/}
