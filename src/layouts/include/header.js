@@ -14,7 +14,7 @@ function Header(){
                     <li className="nav-item dropdown"> <a className="nav-link" data-bs-toggle="dropdown" href="#"> <i className="bi bi-chat-text"></i> <span className="navbar-badge badge text-bg-danger">3</span> </a>
                         <div className="dropdown-menu dropdown-menu-lg dropdown-menu-end"> <a href="#" className="dropdown-item"> {/*begin::Message*/}
                                 <div className="d-flex">
-                                    <div className="flex-shrink-0"> <img src="../../dist/assets/img/user1-128x128.jpg" alt="User Avatar" className="img-size-50 rounded-circle me-3"/> </div>
+                                    <div className="flex-shrink-0"> <img src="/assets/img/user1-128x128.jpg" alt="User Avatar" className="img-size-50 rounded-circle me-3"/> </div>
                                     <div className="flex-grow-1">
                                         <h3 className="dropdown-item-title">
                                             Brad Diesel
@@ -28,7 +28,7 @@ function Header(){
                             </a>
                             <div className="dropdown-divider"></div> <a href="#" className="dropdown-item"> {/*begin::Message*/}
                                 <div className="d-flex">
-                                    <div className="flex-shrink-0"> <img src="../../dist/assets/img/user8-128x128.jpg" alt="User Avatar" className="img-size-50 rounded-circle me-3"/> </div>
+                                    <div className="flex-shrink-0"> <img src="/assets/img/user8-128x128.jpg" alt="User Avatar" className="img-size-50 rounded-circle me-3"/> </div>
                                     <div className="flex-grow-1">
                                         <h3 className="dropdown-item-title">
                                             John Pierce
@@ -42,7 +42,7 @@ function Header(){
                             </a>
                             <div className="dropdown-divider"></div> <a href="#" className="dropdown-item"> {/*begin::Message*/}
                                 <div className="d-flex">
-                                    <div className="flex-shrink-0"> <img src="../../dist/assets/img/user3-128x128.jpg" alt="User Avatar" className="img-size-50 rounded-circle me-3"/> </div>
+                                    <div className="flex-shrink-0"> <img src="/assets/img/user3-128x128.jpg" alt="User Avatar" className="img-size-50 rounded-circle me-3"/> </div>
                                     <div className="flex-grow-1">
                                         <h3 className="dropdown-item-title">
                                             Nora Silvester
@@ -73,7 +73,7 @@ function Header(){
                     <li className="nav-item"> <a className="nav-link" href="#" data-lte-toggle="fullscreen"> <i data-lte-icon="maximize" className="bi bi-arrows-fullscreen"></i> <i data-lte-icon="minimize" className="bi bi-fullscreen-exit" style={{display: "none"}}></i> </a> </li> {/*end::Fullscreen Toggle*/} {/*begin::User Menu Dropdown*/}
                     <li className="nav-item dropdown user-menu"> <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown"> <img src="../../dist/assets/img/user2-160x160.jpg" className="user-image rounded-circle shadow" alt="User Image"/> <span className="d-none d-md-inline">Alexander Pierce</span> </a>
                         <ul className="dropdown-menu dropdown-menu-lg dropdown-menu-end"> {/*begin::User Image*/}
-                            <li className="user-header text-bg-primary"> <img src="../../dist/assets/img/user2-160x160.jpg" className="rounded-circle shadow" alt="User Image"/>
+                            <li className="user-header text-bg-primary"> <img src="/dist/assets/img/user2-160x160.jpg" className="rounded-circle shadow" alt="User Image"/>
                                 <p>
                                     Alexander Pierce - Web Developer
                                     <small>Member since Nov. 2023</small>

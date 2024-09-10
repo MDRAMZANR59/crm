@@ -76,7 +76,7 @@ function Dashboard() {
                         <div className="col-lg-7 connectedSortable">
                             <div className="card mb-4">
                                 <div className="card-header">
-                                    <h3 className="card-title">Sales Value</h3>
+                                    <h3 className="card-title"> Value</h3>
                                 </div>
                                 <div className="card-body">
                                     <div id="revenue-chart"></div>
@@ -96,7 +96,7 @@ function Dashboard() {
                                                     Alexander Pierce
                                                 </span> <span className="direct-chat-timestamp float-end">
                                                     23 Jan 2:00 pm
-                                                </span> </div> {/* /.direct-chat-infos */} <img className="direct-chat-img" src="../../dist/assets/img/user1-128x128.jpg" alt="message user image"/> {/* /.direct-chat-img */}
+                                                </span> </div> {/* /.direct-chat-infos */} <img className="direct-chat-img" src="/assets/img/user1-128x128.jpg" alt="message user image"/> {/* /.direct-chat-img */}
                                             <div className="direct-chat-text">
                                                 Is this template really for free? That's unbelievable!
                                             </div> {/* /.direct-chat-text */}
@@ -106,7 +106,7 @@ function Dashboard() {
                                                     Sarah Bullock
                                                 </span> <span className="direct-chat-timestamp float-start">
                                                     23 Jan 2:05 pm
-                                                </span> </div> {/* /.direct-chat-infos */} <img className="direct-chat-img" src="../../dist/assets/img/user3-128x128.jpg" alt="message user image"/> {/* /.direct-chat-img */}
+                                                </span> </div> {/* /.direct-chat-infos */} <img className="direct-chat-img" src="/assets/img/user3-128x128.jpg" alt="message user image"/> {/* /.direct-chat-img */}
                                             <div className="direct-chat-text">
                                                 You better believe it!
                                             </div> {/* /.direct-chat-text */}
@@ -116,7 +116,7 @@ function Dashboard() {
                                                     Alexander Pierce
                                                 </span> <span className="direct-chat-timestamp float-end">
                                                     23 Jan 5:37 pm
-                                                </span> </div> {/* /.direct-chat-infos */} <img className="direct-chat-img" src="../../dist/assets/img/user1-128x128.jpg" alt="message user image"/> {/* /.direct-chat-img */}
+                                                </span> </div> {/* /.direct-chat-infos */} <img className="direct-chat-img" src="/assets/img/user1-128x128.jpg" alt="message user image"/> {/* /.direct-chat-img */}
                                             <div className="direct-chat-text">
                                                 Working with AdminLTE on a great new app! Wanna join?
                                             </div> {/* /.direct-chat-text */}
@@ -126,13 +126,13 @@ function Dashboard() {
                                                     Sarah Bullock
                                                 </span> <span className="direct-chat-timestamp float-start">
                                                     23 Jan 6:10 pm
-                                                </span> </div> {/* /.direct-chat-infos */} <img className="direct-chat-img" src="../../dist/assets/img/user3-128x128.jpg" alt="message user image"/> {/* /.direct-chat-img */}
+                                                </span> </div> {/* /.direct-chat-infos */} <img className="direct-chat-img" src="/assets/img/user3-128x128.jpg" alt="message user image"/> {/* /.direct-chat-img */}
                                             <div className="direct-chat-text">I would love to.</div> {/* /.direct-chat-text */}
                                         </div> {/* /.direct-chat-msg */}
                                     </div> {/* /.direct-chat-messages*/} {/* Contacts are loaded here */}
                                     <div className="direct-chat-contacts">
                                         <ul className="contacts-list">
-                                            <li> <a href="#"> <img className="contacts-list-img" src="../../dist/assets/img/user1-128x128.jpg" alt="User Avatar"/>
+                                            <li> <a href="#"> <img className="contacts-list-img" src="/assets/img/user1-128x128.jpg" alt="User Avatar"/>
                                                     <div className="contacts-list-info"> <span className="contacts-list-name">
                                                             Count Dracula
                                                             <small className="contacts-list-date float-end">
@@ -141,7 +141,7 @@ function Dashboard() {
                                                             How have you been? I was...
                                                         </span> </div> {/* /.contacts-list-info */}
                                                 </a> </li> {/* End Contact Item */}
-                                            <li> <a href="#"> <img className="contacts-list-img" src="../../dist/assets/img/user7-128x128.jpg" alt="User Avatar"/>
+                                            <li> <a href="#"> <img className="contacts-list-img" src="/assets/img/user7-128x128.jpg" alt="User Avatar"/>
                                                     <div className="contacts-list-info"> <span className="contacts-list-name">
                                                             Sarah Doe
                                                             <small className="contacts-list-date float-end">
@@ -150,7 +150,7 @@ function Dashboard() {
                                                             I will be waiting for...
                                                         </span> </div> {/* /.contacts-list-info */}
                                                 </a> </li> {/* End Contact Item */}
-                                            <li> <a href="#"> <img className="contacts-list-img" src="../../dist/assets/img/user3-128x128.jpg" alt="User Avatar"/>
+                                            <li> <a href="#"> <img className="contacts-list-img" src="/assets/img/user3-128x128.jpg" alt="User Avatar"/>
                                                     <div className="contacts-list-info"> <span className="contacts-list-name">
                                                             Nadia Jolie
                                                             <small className="contacts-list-date float-end">
@@ -159,7 +159,7 @@ function Dashboard() {
                                                             I'll call you back at...
                                                         </span> </div> {/* /.contacts-list-info */}
                                                 </a> </li> {/* End Contact Item */}
-                                            <li> <a href="#"> <img className="contacts-list-img" src="../../dist/assets/img/user5-128x128.jpg" alt="User Avatar"/>
+                                            <li> <a href="#"> <img className="contacts-list-img" src="/assets/img/user5-128x128.jpg" alt="User Avatar"/>
                                                     <div className="contacts-list-info"> <span className="contacts-list-name">
                                                             Nora S. Vans
                                                             <small className="contacts-list-date float-end">
@@ -168,7 +168,7 @@ function Dashboard() {
                                                             Where is your new...
                                                         </span> </div> {/* /.contacts-list-info */}
                                                 </a> </li> {/* End Contact Item */}
-                                            <li> <a href="#"> <img className="contacts-list-img" src="../../dist/assets/img/user6-128x128.jpg" alt="User Avatar"/>
+                                            <li> <a href="#"> <img className="contacts-list-img" src="/assets/img/user6-128x128.jpg" alt="User Avatar"/>
                                                     <div className="contacts-list-info"> <span className="contacts-list-name">
                                                             John K.
                                                             <small className="contacts-list-date float-end">
@@ -177,7 +177,7 @@ function Dashboard() {
                                                             Can I take a look at...
                                                         </span> </div> {/* /.contacts-list-info */}
                                                 </a> </li> {/* End Contact Item */}
-                                            <li> <a href="#"> <img className="contacts-list-img" src="../../dist/assets/img/user8-128x128.jpg" alt="User Avatar"/>
+                                            <li> <a href="#"> <img className="contacts-list-img" src="/assets/img/user8-128x128.jpg" alt="User Avatar"/>
                                                     <div className="contacts-list-info"> <span className="contacts-list-name">
                                                             Kenneth M.
                                                             <small className="contacts-list-date float-end">
